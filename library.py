@@ -19,15 +19,11 @@ from torch.optim import lr_scheduler
 
 from torchvision import transforms, models
 from torchvision.utils import save_image
-# from torchvision.datasets import CIFAR10
 
 # Basic
 import numpy as np
 import scipy.io as sio
 import matplotlib.pyplot as plt
-# font = {'family' : 'serif', 'size'   : 18}
-# plt.rc('font', **font)
-# %matplotlib inline
 
 from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
 
@@ -36,17 +32,12 @@ import itertools
 import math
 import os
 from IPython.display import display, clear_output
-import scipy.stats
-from scipy.stats import multivariate_normal as mvn
 
-# BRL
-# from data_mat_2d import DATA_MAT
 from sklearn.model_selection import train_test_split
 
 import os 
 from glob import glob
 from PIL import Image
-
 
 from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import Pipeline
@@ -132,12 +123,7 @@ def confusion_matrix_old(y_true, y_pred, classes,
     return ax
 
 
-from slacker import Slacker
 
-def to_slack(message):
-    token = 'xoxb-1703739397172-1697786975539-mVrJa1NxiZkKBcVlJ3UcwQJL'
-    slack = Slacker(token)
-    slack.chat.post_message('research',attachments = [message])
 
 
 
