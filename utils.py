@@ -4,7 +4,6 @@ Created on Wed Oct 14 13:12:12 2020
 
 @author: yunhan_SHRM
 """
-########################
 #%% Library
 # Torch
 import torch
@@ -13,7 +12,7 @@ from torch import nn
 from torch import optim
 import torch.nn.functional as F
 from torch.autograd import Variable
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import TensorDataset, Dataset, DataLoader
 import torch.utils.data as utils
 from torch.optim import lr_scheduler
 
